@@ -36,12 +36,12 @@ if sucesion == 1:
     Fk1 = 1
     fibonacci = [Fk, Fk1]
     fibonacci2 = 0
-    fin = int(input("Hasta que iteracion se calcula: "))
+    fin = int(input("Hasta que iteracion de Fibonacci se calcula: "))
 else:
-    Fk = 2
-    Fk1 = 1
+    Fk = 1
+    Fk1 = 2
     fibonacci = [Fk,Fk1]
-    fin = int(input("Hasta que iteracion se calcula: "))
+    fin = int(input("Hasta que iteracion de Lucas se calcula: "))
 
 #Formula 1
 for fib in range(0,fin-1):
@@ -59,6 +59,9 @@ lambda2 = ((1 - raiz5) / 2) ** fin
 restalambdas = lambda1 - lambda2
 fibonacci2 = prim * restalambdas
 
-print fibonacci[fin]
-print fibonacci2
-
+if sucesion == 2:
+    print (fibonacci[fin])
+    
+else:
+    print (fibonacci[fin])
+    print (int(fibonacci2))
